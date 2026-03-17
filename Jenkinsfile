@@ -9,7 +9,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/MysticLoops/container-web-app'
+                git branch: 'main', url: 'https://github.com/MysticLoops/container-web-app.git'
             }
         }
 
