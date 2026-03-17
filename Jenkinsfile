@@ -9,7 +9,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'YOUR_GITHUB_REPO_LINK'
+                git 'https://github.com/MysticLoops/container-web-app'
             }
         }
 
@@ -33,6 +33,5 @@ pipeline {
                 sh 'docker push $DOCKER_IMAGE'
             }
         }
-
     }
 }
