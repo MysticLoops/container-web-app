@@ -3,6 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "luneeepilled/shalini_2023bcs0229"
+        DOCKER_CREDS_ID = "dockerhub-creds"
     }
 
     stages {
@@ -33,5 +34,6 @@ pipeline {
                 sh 'docker push $DOCKER_IMAGE'
             }
         }
+
     }
 }
